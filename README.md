@@ -16,4 +16,4 @@ Perfect for **frontend interview prep**, **practice projects**, and showcasing *
 ## 🚀 Getting Started
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/react-machine-coding.git
+ https://github.com/Mayur-Gangad/react-coding-challenges.git
