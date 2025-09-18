@@ -17,7 +17,7 @@ A simple **Stopwatch App** built with React using the **useRef hook** to demonst
 ## How to Run the Project
 ```bash
 # Clone the repository
-git clone <your-repo-link>
+git clone https://github.com/Mayur-Gangad/react-coding-challenges.git
 
 # Navigate to project directory
 cd stopwatch-app
