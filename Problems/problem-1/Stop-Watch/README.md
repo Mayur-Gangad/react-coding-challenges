@@ -52,9 +52,9 @@ const [isPaused, setIsPaused] = useState(true); // Controls start/stop state
 - **useState** → Updates UI when time changes  
 
 ## Screenshots / Demo
-If you have a screenshot, add it here:  
+
 ```md
-![Stopwatch Demo](public/stopWatch.png)
+![Stopwatch Demo](assets/stopWatch.png)
 ```
 
 ## Learning Points
