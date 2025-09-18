@@ -54,7 +54,7 @@ const [isPaused, setIsPaused] = useState(true); // Controls start/stop state
 ## Screenshots / Demo
 
 ```md
-![Stopwatch Demo](assets/stopWatch.png)
+![Stopwatch Demo](stopWatch.png)
 ```
 
 ## Learning Points
