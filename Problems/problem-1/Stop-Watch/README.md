@@ -1,12 +1,71 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Stopwatch App - React + useRef
 
-Currently, two official plugins are available:
+A simple **Stopwatch App** built with React using the **useRef hook** to demonstrate pause, resume, start, and reset functionalities efficiently.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- ⏱ Start, Stop, Resume, and Reset Timer  
+- ⚡ Optimized with **useRef** to avoid unnecessary re-renders  
+- 🧠 Clean code for **interview practice** and **learning purposes**  
+- 📱 Responsive and minimal UI  
 
-## Expanding the ESLint configuration
+## Tech Stack
+- **React (Hooks)** → For UI and logic  
+- **useRef** → To store interval ID without re-renders  
+- **useState** → To track timer value and pause/resume state  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How to Run the Project
+```bash
+# Clone the repository
+git clone <your-repo-link>
+
+# Navigate to project directory
+cd stopwatch-app
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
+
+## Project Structure
+```
+stopwatch-app/
+│-- src/
+│   │-- App.js         # Main React Component
+│   │-- App.css        # Styles
+│-- public/
+│   │-- index.html
+│-- package.json
+│-- README.md
+```
+
+## Core Logic Explanation
+```jsx
+const timeRef = useRef(null); // Stores interval ID without causing re-render
+const [time, setTime] = useState(0); // Holds timer value
+const [isPaused, setIsPaused] = useState(true); // Controls start/stop state
+```
+
+- **useRef** → Stores setInterval ID so we can start, stop, and resume without re-renders  
+- **useState** → Updates UI when time changes  
+
+## Screenshots / Demo
+If you have a screenshot, add it here:  
+```md
+![Stopwatch Demo](public/stopWatch.png)
+```
+
+## Learning Points
+- Difference between **useRef vs useState**  
+- How to **optimize performance** in React  
+- Real-life use cases for **useRef** (Timers, DOM access, WebSocket, etc.)  
+
+## Future Enhancements
+- ⏳ Add Lap functionality  
+- 🎨 Add better UI with animations  
+- ⏰ Add countdown timer feature  
+
+## Author
+Created by **Mayur Gangad** ✨
